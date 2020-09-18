@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/student system record/configration.h
+
+E:/student system record/user-admin.c
+configration.h
+E:/student system record/configration.h
+user-admin.h
+E:/student system record/user-admin.h
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+E:/student system record/user-admin.h
+
