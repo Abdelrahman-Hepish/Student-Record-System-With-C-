@@ -6,19 +6,17 @@
 
 #IncludeRegexTransform: 
 
-E:/student system record/configration.h
-
-E:/student system record/user-admin.c
-configration.h
-E:/student system record/configration.h
-user-admin.h
-E:/student system record/user-admin.h
-string.h
--
+E:/Student System/interfacing.c
+interfacing.h
+E:/Student System/interfacing.h
+system.h
+E:/Student System/system.h
 stdio.h
 -
-stdlib.h
--
 
-E:/student system record/user-admin.h
+E:/Student System/interfacing.h
+system.h
+E:/Student System/system.h
+
+E:/Student System/system.h
 

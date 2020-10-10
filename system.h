@@ -36,8 +36,18 @@ typedef enum {
     Stop ,
     Resume
 }tcompletion;
-tmode Init_System (int * ) ;
+typedef enum
+{
+    FALSE ,
+    TRUE
+}bool;
+typedef enum
+{
+    SUCCESSFUL_OPERATION ,
+    FAILURE_OPERATION
+}toperation;
+tmode Init_System (void ) ;
 void Admin_System (void ) ;
-void Student_System (int  ) ;
+void Student_System (void ) ;
 tcompletion Ask_For_Resumption (char *message ) ;
 #endif //  _SYSTEM_H__

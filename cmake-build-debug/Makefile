@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\student system record"
+CMAKE_SOURCE_DIR = "E:\Student System"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\student system record\cmake-build-debug"
+CMAKE_BINARY_DIR = "E:\Student System\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\student system record\cmake-build-debug\CMakeFiles" "E:\student system record\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Student System\cmake-build-debug\CMakeFiles" "E:\Student System\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\student system record\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Student System\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -141,6 +141,33 @@ intermdiate_lvl_project: cmake_check_build_system
 intermdiate_lvl_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/build
 .PHONY : intermdiate_lvl_project/fast
+
+interfacing.obj: interfacing.c.obj
+
+.PHONY : interfacing.obj
+
+# target to build an object file
+interfacing.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj
+.PHONY : interfacing.c.obj
+
+interfacing.i: interfacing.c.i
+
+.PHONY : interfacing.i
+
+# target to preprocess a source file
+interfacing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.i
+.PHONY : interfacing.c.i
+
+interfacing.s: interfacing.c.s
+
+.PHONY : interfacing.s
+
+# target to generate assembly for a file
+interfacing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.s
+.PHONY : interfacing.c.s
 
 main.obj: main.c.obj
 
@@ -232,6 +259,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... intermdiate_lvl_project
+	@echo ... interfacing.obj
+	@echo ... interfacing.i
+	@echo ... interfacing.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

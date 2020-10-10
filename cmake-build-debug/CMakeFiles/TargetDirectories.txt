@@ -1,3 +1,3 @@
-E:/student system record/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir
-E:/student system record/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/student system record/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/Student System/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir
+E:/Student System/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Student System/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/student system record/main.c" "E:/student system record/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir/main.c.obj"
-  "E:/student system record/system.c" "E:/student system record/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir/system.c.obj"
-  "E:/student system record/user-admin.c" "E:/student system record/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.obj"
+  "E:/Student System/interfacing.c" "E:/Student System/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj"
+  "E:/Student System/main.c" "E:/Student System/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir/main.c.obj"
+  "E:/Student System/system.c" "E:/Student System/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir/system.c.obj"
+  "E:/Student System/user-admin.c" "E:/Student System/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
