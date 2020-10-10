@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\Student System"
+CMAKE_SOURCE_DIR = "E:\Github\Student Record System"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\Student System\cmake-build-debug"
+CMAKE_BINARY_DIR = "E:\Github\Student Record System\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/intermdiate_lvl_project.dir/depend.make
@@ -78,55 +78,55 @@ include CMakeFiles/intermdiate_lvl_project.dir/flags.make
 
 CMakeFiles/intermdiate_lvl_project.dir/main.c.obj: CMakeFiles/intermdiate_lvl_project.dir/flags.make
 CMakeFiles/intermdiate_lvl_project.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Student System\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/intermdiate_lvl_project.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\intermdiate_lvl_project.dir\main.c.obj   -c "E:\Student System\main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Github\Student Record System\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/intermdiate_lvl_project.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\intermdiate_lvl_project.dir\main.c.obj   -c "E:\Github\Student Record System\main.c"
 
 CMakeFiles/intermdiate_lvl_project.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/intermdiate_lvl_project.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Student System\main.c" > CMakeFiles\intermdiate_lvl_project.dir\main.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Github\Student Record System\main.c" > CMakeFiles\intermdiate_lvl_project.dir\main.c.i
 
 CMakeFiles/intermdiate_lvl_project.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/intermdiate_lvl_project.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Student System\main.c" -o CMakeFiles\intermdiate_lvl_project.dir\main.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Github\Student Record System\main.c" -o CMakeFiles\intermdiate_lvl_project.dir\main.c.s
 
 CMakeFiles/intermdiate_lvl_project.dir/system.c.obj: CMakeFiles/intermdiate_lvl_project.dir/flags.make
 CMakeFiles/intermdiate_lvl_project.dir/system.c.obj: ../system.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Student System\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/intermdiate_lvl_project.dir/system.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\intermdiate_lvl_project.dir\system.c.obj   -c "E:\Student System\system.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Github\Student Record System\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/intermdiate_lvl_project.dir/system.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\intermdiate_lvl_project.dir\system.c.obj   -c "E:\Github\Student Record System\system.c"
 
 CMakeFiles/intermdiate_lvl_project.dir/system.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/intermdiate_lvl_project.dir/system.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Student System\system.c" > CMakeFiles\intermdiate_lvl_project.dir\system.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Github\Student Record System\system.c" > CMakeFiles\intermdiate_lvl_project.dir\system.c.i
 
 CMakeFiles/intermdiate_lvl_project.dir/system.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/intermdiate_lvl_project.dir/system.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Student System\system.c" -o CMakeFiles\intermdiate_lvl_project.dir\system.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Github\Student Record System\system.c" -o CMakeFiles\intermdiate_lvl_project.dir\system.c.s
 
 CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.obj: CMakeFiles/intermdiate_lvl_project.dir/flags.make
 CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.obj: ../user-admin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Student System\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\intermdiate_lvl_project.dir\user-admin.c.obj   -c "E:\Student System\user-admin.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Github\Student Record System\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\intermdiate_lvl_project.dir\user-admin.c.obj   -c "E:\Github\Student Record System\user-admin.c"
 
 CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Student System\user-admin.c" > CMakeFiles\intermdiate_lvl_project.dir\user-admin.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Github\Student Record System\user-admin.c" > CMakeFiles\intermdiate_lvl_project.dir\user-admin.c.i
 
 CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Student System\user-admin.c" -o CMakeFiles\intermdiate_lvl_project.dir\user-admin.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Github\Student Record System\user-admin.c" -o CMakeFiles\intermdiate_lvl_project.dir\user-admin.c.s
 
 CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj: CMakeFiles/intermdiate_lvl_project.dir/flags.make
 CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj: ../interfacing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Student System\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\intermdiate_lvl_project.dir\interfacing.c.obj   -c "E:\Student System\interfacing.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Github\Student Record System\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\intermdiate_lvl_project.dir\interfacing.c.obj   -c "E:\Github\Student Record System\interfacing.c"
 
 CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Student System\interfacing.c" > CMakeFiles\intermdiate_lvl_project.dir\interfacing.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "E:\Github\Student Record System\interfacing.c" > CMakeFiles\intermdiate_lvl_project.dir\interfacing.c.i
 
 CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Student System\interfacing.c" -o CMakeFiles\intermdiate_lvl_project.dir\interfacing.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "E:\Github\Student Record System\interfacing.c" -o CMakeFiles\intermdiate_lvl_project.dir\interfacing.c.s
 
 # Object files for target intermdiate_lvl_project
 intermdiate_lvl_project_OBJECTS = \
@@ -146,7 +146,7 @@ intermdiate_lvl_project.exe: CMakeFiles/intermdiate_lvl_project.dir/build.make
 intermdiate_lvl_project.exe: CMakeFiles/intermdiate_lvl_project.dir/linklibs.rsp
 intermdiate_lvl_project.exe: CMakeFiles/intermdiate_lvl_project.dir/objects1.rsp
 intermdiate_lvl_project.exe: CMakeFiles/intermdiate_lvl_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Student System\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable intermdiate_lvl_project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Github\Student Record System\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable intermdiate_lvl_project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\intermdiate_lvl_project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -159,6 +159,6 @@ CMakeFiles/intermdiate_lvl_project.dir/clean:
 .PHONY : CMakeFiles/intermdiate_lvl_project.dir/clean
 
 CMakeFiles/intermdiate_lvl_project.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "E:\Student System" "E:\Student System" "E:\Student System\cmake-build-debug" "E:\Student System\cmake-build-debug" "E:\Student System\cmake-build-debug\CMakeFiles\intermdiate_lvl_project.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "E:\Github\Student Record System" "E:\Github\Student Record System" "E:\Github\Student Record System\cmake-build-debug" "E:\Github\Student Record System\cmake-build-debug" "E:\Github\Student Record System\cmake-build-debug\CMakeFiles\intermdiate_lvl_project.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/intermdiate_lvl_project.dir/depend
 
