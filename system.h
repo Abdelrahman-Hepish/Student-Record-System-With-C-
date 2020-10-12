@@ -43,8 +43,8 @@ typedef enum
 }bool;
 typedef enum
 {
-    SUCCESSFUL_OPERATION ,
-    FAILURE_OPERATION
+    FAILURE_OPERATION ,
+    SUCCESSFUL_OPERATION
 }toperation;
 tmode Init_System (void ) ;
 void Admin_System (void ) ;

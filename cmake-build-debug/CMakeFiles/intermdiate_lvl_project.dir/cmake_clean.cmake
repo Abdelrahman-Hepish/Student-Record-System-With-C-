@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/intermdiate_lvl_project.dir/database.c.obj"
   "CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj"
   "CMakeFiles/intermdiate_lvl_project.dir/main.c.obj"
   "CMakeFiles/intermdiate_lvl_project.dir/system.c.obj"
-  "CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.obj"
   "intermdiate_lvl_project.exe"
   "intermdiate_lvl_project.exe.manifest"
   "intermdiate_lvl_project.pdb"

@@ -43,6 +43,7 @@ void Admin_System (void )
     char password [MAX_STR_LEN] = "\0" ;
     int id = 0 ;
     int year = 0 ;
+    int total_degree = 0 ;
     // int id ;
     tcompletion completion = Resume ;
     do {
@@ -52,58 +53,58 @@ void Admin_System (void )
         switch (admin_process) {
             case add_record :
                 Init_Add_Record() ;
-                Get_All_Data (name, password, &id, &year) ;
-                Add_Student( name, password, id, year) ;
+                Set_All_Data (name, password, &id, &year , &total_degree) ;
+                Add_Student( name, password, id, year , total_degree) ;
                 break;
             case remove_record :
                 Init_Remove_Record () ;
-                Get_ID(&id) ;
+                Set_ID(&id) ;
                 Remove_Student(id) ;
                 break;
             case edit_record :
                 switch (Init_Modify_Record () ) {
                     case modify_name_password_year :
-                        Get_ID (&id) ;
-                        Get_Name (name) ;
-                        Get_Password (password,"student") ;
-                        Get_Year(&year);
+                        Set_ID (&id) ;
+                        Set_Name (name) ;
+                        Set_Password (password,"student") ;
+                        Set_Year(&year);
                         Modify_Student_Name(id, name) ;
                         Modify_Student_Password(id, password);
                         Modify_Student_Year(id, year);
                         break;
                     case modify_name :
-                        Get_ID (&id) ;
-                        Get_Name (name) ;
+                        Set_ID (&id) ;
+                        Set_Name (name) ;
                         Modify_Student_Name(id, name) ;
                         break;
                     case modify_password :
-                        Get_ID (&id) ;
-                        Get_Password (password,"student") ;
+                        Set_ID (&id) ;
+                        Set_Password (password,"student") ;
                         Modify_Student_Password(id, password);
                         break;
                     case  modify_year :
-                        Get_ID (&id) ;
-                        Get_Year(&year);
+                        Set_ID (&id) ;
+                        Set_Year(&year);
                         Modify_Student_Year(id, year);
                         break;
                     case modify_name_password :
-                        Get_ID (&id) ;
-                        Get_Name (name) ;
-                        Get_Password (password,"student") ;
+                        Set_ID (&id) ;
+                        Set_Name (name) ;
+                        Set_Password (password,"student") ;
                         Modify_Student_Name(id, name) ;
                         Modify_Student_Password(id, password);
                         break;
                     case  modify_name_year :
-                        Get_ID (&id) ;
-                        Get_Name (name) ;
-                        Get_Year(&year);
+                        Set_ID (&id) ;
+                        Set_Name (name) ;
+                        Set_Year(&year);
                         Modify_Student_Name(id, name) ;
                         Modify_Student_Year(id, year);
                         break;
                     case  modify_passoword_year :
-                        Get_ID (&id) ;
-                        Get_Password (password,"student") ;
-                        Get_Year(&year);
+                        Set_ID (&id) ;
+                        Set_Password (password,"student") ;
+                        Set_Year(&year);
                         Modify_Student_Password(id, password);
                         Modify_Student_Year(id, year);
                         break;
@@ -114,7 +115,7 @@ void Admin_System (void )
                 break; // for edit record
             case view_record :
                 Init_View_One_Record () ;
-                Get_ID (&id) ;
+                Set_ID (&id) ;
                 View_Student_Info(id);
                 break;
             case view_all :
@@ -123,7 +124,7 @@ void Admin_System (void )
                     break;
             case  edit_admin_password :
                 Init_Edit_Password_Process ("admin") ;
-                Get_Password (password ,"admin" ) ;
+                Set_Password (password ,"admin" ) ;
                 Modify_Admin_Password (password) ;
                 break;
             default:
@@ -152,7 +153,7 @@ void Student_System (void ) {
                 break;
             case edit_password :
                 Init_Edit_Password_Process("student");
-                Get_Password(password, "student");
+                Set_Password(password, "student");
                 Modify_Student_Password(id, password);
                 break;
             default:

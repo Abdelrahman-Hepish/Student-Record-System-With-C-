@@ -142,6 +142,33 @@ intermdiate_lvl_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/build
 .PHONY : intermdiate_lvl_project/fast
 
+database.obj: database.c.obj
+
+.PHONY : database.obj
+
+# target to build an object file
+database.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/database.c.obj
+.PHONY : database.c.obj
+
+database.i: database.c.i
+
+.PHONY : database.i
+
+# target to preprocess a source file
+database.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/database.c.i
+.PHONY : database.c.i
+
+database.s: database.c.s
+
+.PHONY : database.s
+
+# target to generate assembly for a file
+database.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/database.c.s
+.PHONY : database.c.s
+
 interfacing.obj: interfacing.c.obj
 
 .PHONY : interfacing.obj
@@ -223,33 +250,6 @@ system.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/system.c.s
 .PHONY : system.c.s
 
-user-admin.obj: user-admin.c.obj
-
-.PHONY : user-admin.obj
-
-# target to build an object file
-user-admin.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.obj
-.PHONY : user-admin.c.obj
-
-user-admin.i: user-admin.c.i
-
-.PHONY : user-admin.i
-
-# target to preprocess a source file
-user-admin.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.i
-.PHONY : user-admin.c.i
-
-user-admin.s: user-admin.c.s
-
-.PHONY : user-admin.s
-
-# target to generate assembly for a file
-user-admin.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/user-admin.c.s
-.PHONY : user-admin.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -259,6 +259,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... intermdiate_lvl_project
+	@echo ... database.obj
+	@echo ... database.i
+	@echo ... database.s
 	@echo ... interfacing.obj
 	@echo ... interfacing.i
 	@echo ... interfacing.s
@@ -268,9 +271,6 @@ help:
 	@echo ... system.obj
 	@echo ... system.i
 	@echo ... system.s
-	@echo ... user-admin.obj
-	@echo ... user-admin.i
-	@echo ... user-admin.s
 .PHONY : help
 
 

@@ -2,11 +2,12 @@
 #define __INTERFACING_H__
 #include "system.h"
 /* get data & commands functions */
-void  Get_All_Data (char *name, char *password, int* ID, int *year) ;
-void  Get_ID (int *id) ;
-void  Get_Password (char *password,char *mode) ;
-void  Get_Name (char *name) ;
-void  Get_Year (int *year ) ;
+void  Set_All_Data (char *name, char *password, int* ID, int *year , int *degree) ;
+void  Set_ID (int *id) ;
+void  Set_Password (char *password,char *mode) ;
+void  Set_Name (char *name) ;
+void  Set_Year (int *year ) ;
+void  Set_Total_Degree (int *degree ) ;
 /* presentation & git functions */
 void  Welcome_Admin_Mode (char *password ) ;
 void  Welcome_Student_Mode (char *password , int *id  ) ;

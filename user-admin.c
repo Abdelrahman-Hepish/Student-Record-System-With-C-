@@ -1,4 +1,4 @@
-#include "configration.h"
+
 #include "user-admin.h"
 #define safeFree(p) saferFree((void**)&(p))
 #include <string.h>

@@ -1,5 +1,4 @@
 #include "interfacing.h"
-#include "system.h"
 #include <stdio.h>
 void  Welcome_System (void )
 {
@@ -10,14 +9,14 @@ void  Welcome_System (void )
 void  Welcome_Admin_Mode (char *password )
 {
     printf("You are in Admin Mode \n" );
-    Get_Password(password , "Admin") ;
+    Set_Password(password , "Admin") ;
 
 }
 void  Welcome_Student_Mode (char *password , int *id  )
 {
     printf("You are in Student Mode \n");
-    Get_ID(id) ;
-    Get_Password(password, "Student") ;
+    Set_ID(id) ;
+    Set_Password(password, "Student") ;
 }
 void  Invalid_Log_in (char *mode)
 {
@@ -31,29 +30,35 @@ void  Invalid_Choice (char *tchoice)
 {
     printf("Invalid %s choice :( \n",tchoice) ;
 }
-void  Get_All_Data (char *name, char *password, int *ID, int *year)
+void  Set_All_Data (char *name, char *password, int *ID, int *year , int *degree)
 {
-    Get_Name (name) ;
-    Get_Password ( password , "Student") ;
-    Get_ID (ID) ;
-    Get_Year(year) ;
+    Set_Name (name) ;
+    Set_Password ( password , "Student") ;
+    Set_ID (ID) ;
+    Set_Year(year) ;
+    Set_Total_Degree(degree) ;
 }
-void  Get_ID (int *id)
+void  Set_Total_Degree (int *degree )
+{
+    printf("Enter student degree \n") ;
+    scanf("%d",degree) ;
+}
+void  Set_ID (int *id)
 {
     printf("Enter student id \n") ;
     scanf("%d",id) ;
 }
-void  Get_Name (char *name)
+void  Set_Name (char *name)
 {
     printf("Enter Student Name \n") ;
     scanf("%s",name) ;
 }
-void  Get_Password (char *password,char *mode)
+void  Set_Password (char *password,char *mode)
 {
     printf("Enter %s password \n",mode) ;
     scanf("%s",password) ;
 }
-void Get_Year (int *year )
+void Set_Year (int *year )
 {
     printf("Enter student year \n") ;
     scanf("%d",year) ;
