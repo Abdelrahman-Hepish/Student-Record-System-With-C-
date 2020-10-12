@@ -47,6 +47,7 @@ typedef enum
     SUCCESSFUL_OPERATION
 }toperation;
 tmode Init_System (void ) ;
+void Init_Data(void) ;
 void Admin_System (void ) ;
 void Student_System (void ) ;
 tcompletion Ask_For_Resumption (char *message ) ;

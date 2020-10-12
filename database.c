@@ -7,7 +7,7 @@
 
 static student_data class [CLASS_CAPACITY] ;
 static  place state [CLASS_CAPACITY] ;
-static char* admin_password = ADMIN_DEFAULT_PASSWORD ;
+static char* admin_password  ;
 
 static void saferFree(void **pp) ;
 static available_place Available_Place (void ) ;
@@ -144,7 +144,7 @@ toperation View_All_Records (void )
   {
       if (state[i] == RESERVED)
       {
-          view_index_info(i) ;
+          View_Student_Info(class[i].id) ;
           j++ ;
       }
   }
@@ -195,14 +195,19 @@ static available_place Search_Student_Id (int id )
         return NOT_FOUNDED ;
     }
     return  i ;
-
 }
-static void  view_index_info (int i )
+
+void Set_Place_State (void)
 {
-    Make_Break();
-    printf("Student name : %s\n",class[i].name);
-    printf("Student ID : %d\n",class[i].id);
-    printf("Student year : %d\n",class[i].year);
-    printf("Student degree : %d\n",class[i].total_degree);
-    Make_Break();
+    int i = 0 ;
+    for(i=0 ; i<CLASS_CAPACITY ; i++)
+    {
+        state[i] = FREE ;
+    }
+}
+void Set_Admin_Defult_Password (void )
+{
+    admin_password = (char *) malloc(sizeof(ADMIN_DEFAULT_PASSWORD)+1) ;
+    strcpy(admin_password, ADMIN_DEFAULT_PASSWORD) ;
+
 }

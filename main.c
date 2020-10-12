@@ -4,6 +4,7 @@ int main() {
     /* initialization */
     tmode  mode = admin ;
     int id = 0 ;
+    Init_Data();
     do {
         switch (Init_System()) {
             case admin :

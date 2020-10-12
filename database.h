@@ -32,5 +32,7 @@ toperation Modify_Student_Total_Degree(int id,int degree);
 toperation View_Student_Info(int id);
 toperation View_All_Records (void ) ;
 toperation Modify_Admin_Password (char *password) ;
+void Set_Place_State (void) ;
+void Set_Admin_Defult_Password (void ) ;
 
 #endif // __DATA_BASE_H__

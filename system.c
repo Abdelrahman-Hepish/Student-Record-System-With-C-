@@ -4,9 +4,12 @@
 #include "interfacing.h"
 #include "database.h"
 int share_student_id ;
-
+void Init_Data(void)
+{
+    Set_Place_State() ;
+    Set_Admin_Defult_Password() ;
+}
 tmode Init_System (void ) {
-    user_admin_init();
     tmode mode = admin;
     char password[MAX_STR_LEN] = "\0";
     int id ;
@@ -29,7 +32,7 @@ tmode Init_System (void ) {
                 Correct_Log_in ("student") ;
                 return student;
             } else {
-                Invalid_Log_in ("admin") ;
+                Invalid_Log_in ("student") ;
             }
             break;
         default:
@@ -44,7 +47,6 @@ void Admin_System (void )
     int id = 0 ;
     int year = 0 ;
     int total_degree = 0 ;
-    // int id ;
     tcompletion completion = Resume ;
     do {
         Make_Break () ;
@@ -119,7 +121,7 @@ void Admin_System (void )
                 View_Student_Info(id);
                 break;
             case view_all :
-                    Init_View_All_Records () ;
+                Init_View_All_Records () ;
                 View_All_Records () ;
                     break;
             case  edit_admin_password :
