@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "system.h"
-#include "user-admin.h"
 #include "interfacing.h"
 #include "database.h"
 int share_student_id ;

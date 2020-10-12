@@ -37,6 +37,7 @@ bool Check_Student_ID_Password (char *password, int id )
 toperation Add_Student(char* name,char* password,int  id,int  year , int total_degree )
 {
     int free_place = Available_Place() ;
+    if(Search_Student_Id(id) != NOT_FOUNDED) return FAILURE_OPERATION ;
     if (free_place == ALL_REVERSED ) return  FAILURE_OPERATION ;
     else
     {
