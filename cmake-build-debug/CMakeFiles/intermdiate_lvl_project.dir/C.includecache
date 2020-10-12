@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-E:/Github/Student Record System/database.c
-database.h
 E:/Github/Student Record System/database.h
+system.h
+E:/Github/Student Record System/system.h
+
+E:/Github/Student Record System/interfacing.h
+system.h
+E:/Github/Student Record System/system.h
+
+E:/Github/Student Record System/student.c
+student.h
+E:/Github/Student Record System/student.h
 stdio.h
--
-stdlib.h
--
-string.h
 -
 interfacing.h
 E:/Github/Student Record System/interfacing.h
-
+database.h
 E:/Github/Student Record System/database.h
-system.h
-E:/Github/Student Record System/system.h
 
-E:/Github/Student Record System/interfacing.h
-system.h
-E:/Github/Student Record System/system.h
+E:/Github/Student Record System/student.h
 
 E:/Github/Student Record System/system.h
 

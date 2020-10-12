@@ -1,6 +1,7 @@
 #ifndef __INTERFACING_H__
 #define __INTERFACING_H__
 #include "system.h"
+#include "admin.h"
 /* get data & commands functions */
 void  Set_All_Data (char *name, char *password, int* ID, int *year , int *degree) ;
 void  Set_ID (int *id) ;

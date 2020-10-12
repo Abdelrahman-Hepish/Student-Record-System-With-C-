@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "system.h"
+#include "student.h"
+#include "admin.h"
 int main() {
     /* initialization */
     tmode  mode = admin ;

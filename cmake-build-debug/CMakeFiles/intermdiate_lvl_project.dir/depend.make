@@ -11,11 +11,17 @@ CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj: ../interfacing.h
 CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj: ../system.h
 
 CMakeFiles/intermdiate_lvl_project.dir/main.c.obj: ../main.c
+CMakeFiles/intermdiate_lvl_project.dir/main.c.obj: ../student.h
 CMakeFiles/intermdiate_lvl_project.dir/main.c.obj: ../system.h
+
+CMakeFiles/intermdiate_lvl_project.dir/student.c.obj: ../database.h
+CMakeFiles/intermdiate_lvl_project.dir/student.c.obj: ../interfacing.h
+CMakeFiles/intermdiate_lvl_project.dir/student.c.obj: ../student.c
+CMakeFiles/intermdiate_lvl_project.dir/student.c.obj: ../student.h
+CMakeFiles/intermdiate_lvl_project.dir/student.c.obj: ../system.h
 
 CMakeFiles/intermdiate_lvl_project.dir/system.c.obj: ../database.h
 CMakeFiles/intermdiate_lvl_project.dir/system.c.obj: ../interfacing.h
 CMakeFiles/intermdiate_lvl_project.dir/system.c.obj: ../system.c
 CMakeFiles/intermdiate_lvl_project.dir/system.c.obj: ../system.h
-CMakeFiles/intermdiate_lvl_project.dir/system.c.obj: ../user-admin.h
 

@@ -93,12 +93,12 @@ clean: CMakeFiles/intermdiate_lvl_project.dir/clean
 CMakeFiles/intermdiate_lvl_project.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="E:\Github\Student Record System\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5 "Built target intermdiate_lvl_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="E:\Github\Student Record System\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target intermdiate_lvl_project"
 .PHONY : CMakeFiles/intermdiate_lvl_project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/intermdiate_lvl_project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Github\Student Record System\cmake-build-debug\CMakeFiles" 5
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Github\Student Record System\cmake-build-debug\CMakeFiles" 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/intermdiate_lvl_project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Github\Student Record System\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/intermdiate_lvl_project.dir/rule
