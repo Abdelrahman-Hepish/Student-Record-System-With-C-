@@ -16,6 +16,7 @@ void  Correct_Log_in (char *mode) ;
 void  Invalid_Log_in (char *mode) ;
 void  Invalid_Choice (char *tchoice) ;
 void  Init_Edit_Password_Process (char *tmode) ;
+void  Detect_Failure(char *failure) ;
 tedit_record  Init_Modify_Record (void) ;
 /* just present */
 void  Welcome_System (void ) ;

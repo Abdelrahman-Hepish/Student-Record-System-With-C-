@@ -19,7 +19,7 @@ int main() {
                 /* should not be here */
                 break;
         }
-    }while (Ask_For_Resumption("in the system ") == Resume);
+    }while (Ask_For_Resumption("the system ") == Resume);
 
     return 0;
 }

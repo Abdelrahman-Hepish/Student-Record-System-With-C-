@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/intermdiate_lvl_project.dir/admin.c.obj"
   "CMakeFiles/intermdiate_lvl_project.dir/database.c.obj"
   "CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj"
   "CMakeFiles/intermdiate_lvl_project.dir/main.c.obj"

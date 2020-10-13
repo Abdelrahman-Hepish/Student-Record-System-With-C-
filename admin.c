@@ -20,84 +20,67 @@ void Admin_System (void )
             case add_record :
                 Init_Add_Record() ;
                 Set_All_Data (name, password, &id, &year , &total_degree) ;
-                Add_Student( name, password, id, year , total_degree) ;
+                if(Add_Student( name, password, id, year , total_degree) != SUCCESSFUL_OPERATION)
+                { Detect_Failure("in adding new student process ") ; }
                 break;
             case remove_record :
                 Init_Remove_Record () ;
                 Set_ID(&id) ;
-                Remove_Student(id) ;
+                if(Remove_Student(id) != SUCCESSFUL_OPERATION)
+                { Detect_Failure("in removing student process ") ; }
                 break;
             case edit_record :
-                switch (Init_Modify_Record () ) {
-                    case modify_name_password_year :
-                        Set_ID (&id) ;
-                        Set_Name (name) ;
-                        Set_Password (password,"student") ;
-                        Set_Year(&year);
-                        Modify_Student_Name(id, name) ;
-                        Modify_Student_Password(id, password);
-                        Modify_Student_Year(id, year);
-                        break;
-                    case modify_name :
-                        Set_ID (&id) ;
-                        Set_Name (name) ;
-                        Modify_Student_Name(id, name) ;
-                        break;
-                    case modify_password :
-                        Set_ID (&id) ;
-                        Set_Password (password,"student") ;
-                        Modify_Student_Password(id, password);
-                        break;
-                    case  modify_year :
-                        Set_ID (&id) ;
-                        Set_Year(&year);
-                        Modify_Student_Year(id, year);
-                        break;
-                    case modify_name_password :
-                        Set_ID (&id) ;
-                        Set_Name (name) ;
-                        Set_Password (password,"student") ;
-                        Modify_Student_Name(id, name) ;
-                        Modify_Student_Password(id, password);
-                        break;
-                    case  modify_name_year :
-                        Set_ID (&id) ;
-                        Set_Name (name) ;
-                        Set_Year(&year);
-                        Modify_Student_Name(id, name) ;
-                        Modify_Student_Year(id, year);
-                        break;
-                    case  modify_password_year :
-                        Set_ID (&id) ;
-                        Set_Password (password,"student") ;
-                        Set_Year(&year);
-                        Modify_Student_Password(id, password);
-                        Modify_Student_Year(id, year);
-                        break;
-                    default:
-                        /* should not be here */
-                        break;
-                }
+                do {
+                    Set_ID (&id) ;
+                    switch (Init_Modify_Record () ) {
+                        case modify_name :
+                            Set_Name (name) ;
+                            if(Modify_Student_Name(id, name) != SUCCESSFUL_OPERATION)
+                            { Detect_Failure("in modifying student name ") ; }
+                            break;
+                        case modify_password :
+                            Set_Password (password,"student") ;
+                            if(Modify_Student_Password(id, password) != SUCCESSFUL_OPERATION)
+                            { Detect_Failure("in modifying student password ") ; }
+                            break;
+                        case  modify_year :
+                            Set_Year(&year);
+                            if(Modify_Student_Year(id, year) != SUCCESSFUL_OPERATION)
+                            { Detect_Failure("in modifying student year ") ; }
+                            break;
+                        case modify_total_degree :
+                            Set_Total_Degree(&total_degree) ;
+                            if(Modify_Student_Total_Degree(id , total_degree) != SUCCESSFUL_OPERATION)
+                            { Detect_Failure("in modifying student total degree ") ; }
+                            break;
+                        default:
+                            /* should not be here */
+                            break;
+                    }
+                }while (Ask_For_Resumption("editing student record ") == Resume) ;
                 break; // for edit record
             case view_record :
                 Init_View_One_Record () ;
                 Set_ID (&id) ;
-                View_Student_Info(id);
+                if(View_Student_Info(id) != SUCCESSFUL_OPERATION)
+                { Detect_Failure("in viewing student record process ") ; }
                 break;
             case view_all :
                 Init_View_All_Records () ;
-                View_All_Records () ;
+                if(View_All_Records ()  != SUCCESSFUL_OPERATION)
+                { Detect_Failure("in viewing all records process ") ; }
                 break;
             case  edit_admin_password :
                 Init_Edit_Password_Process ("admin") ;
                 Set_Password (password ,"admin" ) ;
-                Modify_Admin_Password (password) ;
+                if(Modify_Admin_Password (password)   != SUCCESSFUL_OPERATION)
+                { Detect_Failure("in editing admin password process ") ; }
                 break;
             default:
                 Invalid_Choice ("operation") ;
                 break;
         }
 
-    }while (Ask_For_Resumption("in admin mode ") == Resume) ;
+    }while (Ask_For_Resumption("admin mode ") == Resume) ;
 
 }

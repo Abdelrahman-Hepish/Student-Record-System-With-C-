@@ -75,13 +75,12 @@ void  Init_Remove_Record (void)
 }
 tedit_record  Init_Modify_Record (void)
 {
-    tedit_record choice = modify_name_password_year ;
+    tedit_record choice = modify_total_degree ;
     printf("Modifying record process \n"
            "****************************\n"
            "Choosing specified data to change \n"
-           " Enter 0 to modify name              , 1 to modify password             \n"
-           "       2 to modify_year              , 3 to modify name & password & year   \n"
-           "       4 to modify name & password   , 5 to modify passoword & year  \n") ;
+           " Enter 0 to modify name            , 1 to modify password          \n"
+           "       2 to modify year            , 3 to modify total degree      \n");
     scanf("%d",&choice) ;
     return choice ;
 }
@@ -110,7 +109,7 @@ void  Present_Admin_Privileges (void )
 }
 void  Present_Sutudent_Privileges (void )
 {
-    printf("welcome in admin mode \n"
+    printf("welcome in student mode \n"
            "Choosing operation\n"
            " Enter 0 to view your record   , 1 to edit your password \n") ;
 }
@@ -121,7 +120,14 @@ void  Make_Break (void )
 tcompletion Ask_For_Resumption (char *message )
 {
     tcompletion completion ;
-    printf("To resume %s\nEnter : 1 \nTo end Enter : 0\n",message) ;
+    printf("To resume %s\n"
+           "Enter : 1 \n"
+           "To end %s"
+           "Enter : 0\n",message,message) ;
     scanf("%d",&completion) ;
     return completion ;
+}
+void  Detect_Failure(char *failure)
+{
+    printf("Failure in %s\n",failure) ;
 }

@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/Github/Student Record System/admin.c">
+			<Option target="intermdiate_lvl_project"/>
+		</Unit>
+		<Unit filename="E:/Github/Student Record System/admin.h">
+			<Option target="intermdiate_lvl_project"/>
+		</Unit>
 		<Unit filename="E:/Github/Student Record System/database.c">
 			<Option target="intermdiate_lvl_project"/>
 		</Unit>

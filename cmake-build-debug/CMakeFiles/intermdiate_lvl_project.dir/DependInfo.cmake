@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "E:/Github/Student Record System/admin.c" "E:/Github/Student Record System/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir/admin.c.obj"
   "E:/Github/Student Record System/database.c" "E:/Github/Student Record System/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir/database.c.obj"
   "E:/Github/Student Record System/interfacing.c" "E:/Github/Student Record System/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj"
   "E:/Github/Student Record System/main.c" "E:/Github/Student Record System/cmake-build-debug/CMakeFiles/intermdiate_lvl_project.dir/main.c.obj"

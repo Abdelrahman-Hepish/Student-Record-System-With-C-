@@ -6,13 +6,57 @@
 
 #IncludeRegexTransform: 
 
+E:/Github/Student Record System/admin.c
+stdio.h
+E:/Github/Student Record System/stdio.h
+admin.h
+E:/Github/Student Record System/admin.h
+system.h
+E:/Github/Student Record System/system.h
+interfacing.h
+E:/Github/Student Record System/interfacing.h
+database.h
+E:/Github/Student Record System/database.h
+
+E:/Github/Student Record System/admin.h
+
+E:/Github/Student Record System/database.c
+database.h
+E:/Github/Student Record System/database.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+interfacing.h
+E:/Github/Student Record System/interfacing.h
+
 E:/Github/Student Record System/database.h
 system.h
 E:/Github/Student Record System/system.h
 
+E:/Github/Student Record System/interfacing.c
+interfacing.h
+E:/Github/Student Record System/interfacing.h
+stdio.h
+-
+
 E:/Github/Student Record System/interfacing.h
 system.h
 E:/Github/Student Record System/system.h
+admin.h
+E:/Github/Student Record System/admin.h
+
+E:/Github/Student Record System/main.c
+stdio.h
+-
+system.h
+E:/Github/Student Record System/system.h
+student.h
+E:/Github/Student Record System/student.h
+admin.h
+E:/Github/Student Record System/admin.h
 
 E:/Github/Student Record System/student.c
 student.h
@@ -25,6 +69,16 @@ database.h
 E:/Github/Student Record System/database.h
 
 E:/Github/Student Record System/student.h
+
+E:/Github/Student Record System/system.c
+stdio.h
+-
+system.h
+E:/Github/Student Record System/system.h
+interfacing.h
+E:/Github/Student Record System/interfacing.h
+database.h
+E:/Github/Student Record System/database.h
 
 E:/Github/Student Record System/system.h
 

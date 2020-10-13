@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include "interfacing.h"
 #include "database.h"
+/* FAILURE_OPERATION ,
+    SUCCESSFUL_OPERATION*/
 extern int share_student_id ;
 void Student_System (void ) {
     tprivileges_student student_proecess = view_student_record;
@@ -17,17 +19,19 @@ void Student_System (void ) {
         switch (student_proecess) {
             case view_student_record :
                 Init_View_One_Record();
-                View_Student_Info(id);
+                if(View_Student_Info(id) != SUCCESSFUL_OPERATION)
+                { Detect_Failure("in viewing student info process ") ; }
                 break;
             case edit_password :
                 Init_Edit_Password_Process("student");
                 Set_Password(password, "student");
-                Modify_Student_Password(id, password);
+                if(Modify_Student_Password(id, password) != SUCCESSFUL_OPERATION)
+                { Detect_Failure("in editing student password process ") ; }
                 break;
             default:
                 Invalid_Choice("operation");
                 break;
 
         }
-    }while (Ask_For_Resumption("in student mode") == Resume) ;
+    }while (Ask_For_Resumption("student mode") == Resume) ;
 }

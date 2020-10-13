@@ -142,6 +142,33 @@ intermdiate_lvl_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/build
 .PHONY : intermdiate_lvl_project/fast
 
+admin.obj: admin.c.obj
+
+.PHONY : admin.obj
+
+# target to build an object file
+admin.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/admin.c.obj
+.PHONY : admin.c.obj
+
+admin.i: admin.c.i
+
+.PHONY : admin.i
+
+# target to preprocess a source file
+admin.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/admin.c.i
+.PHONY : admin.c.i
+
+admin.s: admin.c.s
+
+.PHONY : admin.s
+
+# target to generate assembly for a file
+admin.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/admin.c.s
+.PHONY : admin.c.s
+
 database.obj: database.c.obj
 
 .PHONY : database.obj
@@ -286,6 +313,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... intermdiate_lvl_project
+	@echo ... admin.obj
+	@echo ... admin.i
+	@echo ... admin.s
 	@echo ... database.obj
 	@echo ... database.i
 	@echo ... database.s
