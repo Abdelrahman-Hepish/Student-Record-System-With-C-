@@ -5,25 +5,24 @@
 
 typedef enum
 {
-    add_record ,
-    remove_record ,
-    edit_record ,
-    view_record ,
-    view_all ,
-    edit_admin_password
+    ADD_RECORD ,
+    REMOVE_RECORD ,
+    EDIT_RECORD ,
+    VIEW_RECORD ,
+    VIEW_ALL_RECORDS ,
+    EDIT_ADMIN_PASSWORD
 }tprivileges_admin;
 typedef enum
 {
-    modify_name ,
-    modify_password ,
-    modify_year ,
-    modify_total_degree ,
-    modify_name_password_year_degree ,
-    modify_name_password_year ,
-    modify_name_password ,
-    modify_name_year ,
-    modify_password_year ,
-    modify_name_degree
+    MODIFY_NAME ,
+    MODIFY_PASSWORD ,
+    MODIFY_YEAR ,
+    MODIFY_TOTAL_DEGREE ,
 }tedit_record;
+/*
+ * Description : Admin_System is a function that can choose between a lot of privileges ike (ADD_RECORD ,REMOVE_RECORD ,EDIT_RECORD ,VIEW_RECORD ,VIEW_ALL_RECORDS ,EDIT_ADMIN_PASSWORD) through
+ * return      : No thing
+ * complexity  : O(N) Best Case Time = Worst Case Time
+ */
 void Admin_System (void ) ;
 #endif // __ADMIN_H__

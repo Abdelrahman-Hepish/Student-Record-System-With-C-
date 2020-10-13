@@ -1,18 +1,14 @@
-#include <stdio.h>
 #include "system.h"
 #include "student.h"
 #include "admin.h"
 int main() {
-    /* initialization */
-    tmode  mode = admin ;
-    int id = 0 ;
     Init_Data();
     do {
         switch (Init_System()) {
-            case admin :
+            case ADMIN :
                 Admin_System();
                 break;
-            case student :
+            case STUDENT :
                 Student_System();
                 break;
             default:

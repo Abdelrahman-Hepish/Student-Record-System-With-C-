@@ -75,7 +75,7 @@ void  Init_Remove_Record (void)
 }
 tedit_record  Init_Modify_Record (void)
 {
-    tedit_record choice = modify_total_degree ;
+    tedit_record choice = MODIFY_TOTAL_DEGREE ;
     printf("Modifying record process \n"
            "****************************\n"
            "Choosing specified data to change \n"
@@ -116,16 +116,6 @@ void  Present_Sutudent_Privileges (void )
 void  Make_Break (void )
 {
     printf("*************************************************************************************\n") ;
-}
-tcompletion Ask_For_Resumption (char *message )
-{
-    tcompletion completion ;
-    printf("To resume %s\n"
-           "Enter : 1 \n"
-           "To end %s"
-           "Enter : 0\n",message,message) ;
-    scanf("%d",&completion) ;
-    return completion ;
 }
 void  Detect_Failure(char *failure)
 {

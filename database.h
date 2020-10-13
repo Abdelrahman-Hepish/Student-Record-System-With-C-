@@ -93,7 +93,7 @@ toperation Modify_Admin_Password (char *password) ;
  */
 void Set_Place_State (void) ;
 /*
- * Description : Set_Admin_Default_Password is a function used to initialize the admin default password 
+ * Description : Set_Admin_Default_Password is a function used to initialize the admin default password
  * return      : No thing
  * complexity  : O(N) Best Case Time = Worst Case Time
  */
