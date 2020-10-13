@@ -1,5 +1,8 @@
 #ifndef __ADMIN_H__
 #define __ADMIN_H__
+
+#define ADMIN_DEFAULT_PASSWORD "hello"
+
 typedef enum
 {
     add_record ,

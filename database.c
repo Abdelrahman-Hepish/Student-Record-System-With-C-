@@ -206,7 +206,7 @@ void Set_Place_State (void)
         state[i] = FREE ;
     }
 }
-void Set_Admin_Defult_Password (void )
+void Set_Admin_Default_Password (void )
 {
     admin_password = (char *) malloc(sizeof(ADMIN_DEFAULT_PASSWORD)+1) ;
     strcpy(admin_password, ADMIN_DEFAULT_PASSWORD) ;

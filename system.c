@@ -6,7 +6,7 @@ int share_student_id ;
 void Init_Data(void)
 {
     Set_Place_State() ;
-    Set_Admin_Defult_Password() ;
+    Set_Admin_Default_Password() ;
 }
 tmode Init_System (void ) {
     tmode mode = admin;
