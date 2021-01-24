@@ -67,24 +67,13 @@ RM = "C:\Program Files\JetBrains\CLion 2020.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\Github\Student Record System"
+CMAKE_SOURCE_DIR = "E:\Courses\C programming_Data Structure in c\Data stracture\App list"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\Github\Student Record System\cmake-build-debug"
+CMAKE_BINARY_DIR = "E:\Courses\C programming_Data Structure in c\Data stracture\App list\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -97,11 +86,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2020.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Github\Student Record System\cmake-build-debug\CMakeFiles" "E:\Github\Student Record System\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Courses\C programming_Data Structure in c\Data stracture\App list\cmake-build-debug\CMakeFiles" "E:\Courses\C programming_Data Structure in c\Data stracture\App list\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Github\Student Record System\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Courses\C programming_Data Structure in c\Data stracture\App list\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named intermdiate_lvl_project
+# Target rules for targets named App_list
 
 # Build rule for target.
-intermdiate_lvl_project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 intermdiate_lvl_project
-.PHONY : intermdiate_lvl_project
+App_list: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 App_list
+.PHONY : App_list
 
 # fast build rule for target.
-intermdiate_lvl_project/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/build
-.PHONY : intermdiate_lvl_project/fast
+App_list/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/build
+.PHONY : App_list/fast
+
+List.obj: List.c.obj
+
+.PHONY : List.obj
+
+# target to build an object file
+List.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/List.c.obj
+.PHONY : List.c.obj
+
+List.i: List.c.i
+
+.PHONY : List.i
+
+# target to preprocess a source file
+List.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/List.c.i
+.PHONY : List.c.i
+
+List.s: List.c.s
+
+.PHONY : List.s
+
+# target to generate assembly for a file
+List.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/List.c.s
+.PHONY : List.c.s
 
 admin.obj: admin.c.obj
 
@@ -148,7 +175,7 @@ admin.obj: admin.c.obj
 
 # target to build an object file
 admin.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/admin.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/admin.c.obj
 .PHONY : admin.c.obj
 
 admin.i: admin.c.i
@@ -157,7 +184,7 @@ admin.i: admin.c.i
 
 # target to preprocess a source file
 admin.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/admin.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/admin.c.i
 .PHONY : admin.c.i
 
 admin.s: admin.c.s
@@ -166,7 +193,7 @@ admin.s: admin.c.s
 
 # target to generate assembly for a file
 admin.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/admin.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/admin.c.s
 .PHONY : admin.c.s
 
 database.obj: database.c.obj
@@ -175,7 +202,7 @@ database.obj: database.c.obj
 
 # target to build an object file
 database.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/database.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/database.c.obj
 .PHONY : database.c.obj
 
 database.i: database.c.i
@@ -184,7 +211,7 @@ database.i: database.c.i
 
 # target to preprocess a source file
 database.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/database.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/database.c.i
 .PHONY : database.c.i
 
 database.s: database.c.s
@@ -193,7 +220,7 @@ database.s: database.c.s
 
 # target to generate assembly for a file
 database.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/database.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/database.c.s
 .PHONY : database.c.s
 
 interfacing.obj: interfacing.c.obj
@@ -202,7 +229,7 @@ interfacing.obj: interfacing.c.obj
 
 # target to build an object file
 interfacing.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/interfacing.c.obj
 .PHONY : interfacing.c.obj
 
 interfacing.i: interfacing.c.i
@@ -211,7 +238,7 @@ interfacing.i: interfacing.c.i
 
 # target to preprocess a source file
 interfacing.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/interfacing.c.i
 .PHONY : interfacing.c.i
 
 interfacing.s: interfacing.c.s
@@ -220,7 +247,7 @@ interfacing.s: interfacing.c.s
 
 # target to generate assembly for a file
 interfacing.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/interfacing.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/interfacing.c.s
 .PHONY : interfacing.c.s
 
 main.obj: main.c.obj
@@ -229,7 +256,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -238,7 +265,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -247,7 +274,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/main.c.s
 .PHONY : main.c.s
 
 student.obj: student.c.obj
@@ -256,7 +283,7 @@ student.obj: student.c.obj
 
 # target to build an object file
 student.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/student.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/student.c.obj
 .PHONY : student.c.obj
 
 student.i: student.c.i
@@ -265,7 +292,7 @@ student.i: student.c.i
 
 # target to preprocess a source file
 student.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/student.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/student.c.i
 .PHONY : student.c.i
 
 student.s: student.c.s
@@ -274,7 +301,7 @@ student.s: student.c.s
 
 # target to generate assembly for a file
 student.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/student.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/student.c.s
 .PHONY : student.c.s
 
 system.obj: system.c.obj
@@ -283,7 +310,7 @@ system.obj: system.c.obj
 
 # target to build an object file
 system.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/system.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/system.c.obj
 .PHONY : system.c.obj
 
 system.i: system.c.i
@@ -292,7 +319,7 @@ system.i: system.c.i
 
 # target to preprocess a source file
 system.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/system.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/system.c.i
 .PHONY : system.c.i
 
 system.s: system.c.s
@@ -301,7 +328,7 @@ system.s: system.c.s
 
 # target to generate assembly for a file
 system.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/system.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/system.c.s
 .PHONY : system.c.s
 
 # Help Target
@@ -312,7 +339,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... intermdiate_lvl_project
+	@echo ... App_list
+	@echo ... List.obj
+	@echo ... List.i
+	@echo ... List.s
 	@echo ... admin.obj
 	@echo ... admin.i
 	@echo ... admin.s

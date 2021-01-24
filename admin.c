@@ -11,6 +11,7 @@ void Admin_System (void )
     int id = 0 ;
     int year = 0 ;
     int total_degree = 0 ;
+    int student_place = 0 ;
     tcompletion completion = Resume ;
     do {
         Make_Break () ;
@@ -32,6 +33,8 @@ void Admin_System (void )
             case EDIT_RECORD :
                 do {
                     Set_ID (&id) ;
+                    student_place = Search_Student_Id(id) ;
+                    if(student_place == NOT_FOUNDED) break;
                     switch (Init_Modify_Record () ) {
                         case MODIFY_NAME :
                             Set_Name (name) ;

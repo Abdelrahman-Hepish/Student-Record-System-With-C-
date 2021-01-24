@@ -1,0 +1,60 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/List.h
+configuration.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/configuration.h
+
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/admin.c
+stdio.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/stdio.h
+admin.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/admin.h
+system.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/system.h
+interfacing.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/interfacing.h
+database.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/database.h
+
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/admin.h
+
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/configuration.h
+
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/database.c
+stdlib.h
+-
+configuration.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/configuration.h
+List.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/List.h
+stdio.h
+-
+database.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/database.h
+string.h
+-
+interfacing.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/interfacing.h
+
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/database.h
+stdlib.h
+-
+system.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/system.h
+List.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/List.h
+
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/interfacing.h
+system.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/system.h
+admin.h
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/admin.h
+
+E:/Courses/C programming_Data Structure in c/Data stracture/App list/system.h
+

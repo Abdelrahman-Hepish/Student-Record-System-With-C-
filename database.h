@@ -1,15 +1,10 @@
 #ifndef __DATA_BASE_H__
 #define __DATA_BASE_H__
+#include <stdlib.h>
 #include "system.h"
-#define CLASS_CAPACITY   10
-typedef struct
-{
-    char *name ;
-    char *password ;
-    int id ;
-    int year ;
-    int total_degree ;
-}student_data;
+#include "List.h"
+
+
 typedef enum
 {
     RESERVED ,
@@ -99,4 +94,5 @@ void Set_Place_State (void) ;
  */
 void Set_Admin_Default_Password (void ) ;
 
+available_place Search_Student_Id (int id ) ;
 #endif // __DATA_BASE_H__

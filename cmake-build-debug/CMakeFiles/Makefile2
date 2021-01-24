@@ -63,16 +63,16 @@ RM = "C:\Program Files\JetBrains\CLion 2020.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\Github\Student Record System"
+CMAKE_SOURCE_DIR = "E:\Courses\C programming_Data Structure in c\Data stracture\App list"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\Github\Student Record System\cmake-build-debug"
+CMAKE_BINARY_DIR = "E:\Courses\C programming_Data Structure in c\Data stracture\App list\cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/intermdiate_lvl_project.dir/all
+all: CMakeFiles/App_list.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/intermdiate_lvl_project.dir/clean
+clean: CMakeFiles/App_list.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/intermdiate_lvl_project.dir
+# Target rules for target CMakeFiles/App_list.dir
 
 # All Build rule for target.
-CMakeFiles/intermdiate_lvl_project.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="E:\Github\Student Record System\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target intermdiate_lvl_project"
-.PHONY : CMakeFiles/intermdiate_lvl_project.dir/all
+CMakeFiles/App_list.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="E:\Courses\C programming_Data Structure in c\Data stracture\App list\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5,6,7,8 "Built target App_list"
+.PHONY : CMakeFiles/App_list.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/intermdiate_lvl_project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Github\Student Record System\cmake-build-debug\CMakeFiles" 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/intermdiate_lvl_project.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Github\Student Record System\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles/intermdiate_lvl_project.dir/rule
+CMakeFiles/App_list.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Courses\C programming_Data Structure in c\Data stracture\App list\cmake-build-debug\CMakeFiles" 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/App_list.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Courses\C programming_Data Structure in c\Data stracture\App list\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/App_list.dir/rule
 
 # Convenience name for target.
-intermdiate_lvl_project: CMakeFiles/intermdiate_lvl_project.dir/rule
+App_list: CMakeFiles/App_list.dir/rule
 
-.PHONY : intermdiate_lvl_project
+.PHONY : App_list
 
 # clean rule for target.
-CMakeFiles/intermdiate_lvl_project.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\intermdiate_lvl_project.dir\build.make CMakeFiles/intermdiate_lvl_project.dir/clean
-.PHONY : CMakeFiles/intermdiate_lvl_project.dir/clean
+CMakeFiles/App_list.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\App_list.dir\build.make CMakeFiles/App_list.dir/clean
+.PHONY : CMakeFiles/App_list.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
