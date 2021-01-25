@@ -74,6 +74,7 @@ toperation Modify_Student_Name(int id,char* name)
     else
     {
         RetrieveList(student_place,&temp_record,&class) ;
+        safeFree(temp_record.name) ;
         temp_record.name = (char *) malloc(strlen(name)+1);
         strcpy(temp_record.name,name) ;
         ReplaceList(student_place,temp_record,&class) ;
@@ -88,8 +89,9 @@ toperation Modify_Student_Password(int id,char* password)
     else
     {
         RetrieveList(student_place,&temp_record,&class) ;
+        safeFree(temp_record.password) ;
         temp_record.password = (char *) malloc(strlen(password)+1);
-        strcpy(temp_record.name,password) ;
+        strcpy(temp_record.password,password) ; // ther is a bug here
         ReplaceList(student_place,temp_record,&class) ;
         return SUCCESSFUL_OPERATION ;
     }

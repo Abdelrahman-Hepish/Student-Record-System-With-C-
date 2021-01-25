@@ -32,9 +32,13 @@ void Admin_System (void )
                 break;
             case EDIT_RECORD :
                 do {
-                    Set_ID (&id) ;
-                    student_place = Search_Student_Id(id) ;
-                    if(student_place == NOT_FOUNDED) break;
+                    Set_ID(&id);
+                    student_place = Search_Student_Id(id);
+                    if (student_place == NOT_FOUNDED)
+                    {
+                        Detect_Failure("getting the ID ");
+                        continue;
+                    }
                     switch (Init_Modify_Record () ) {
                         case MODIFY_NAME :
                             Set_Name (name) ;
